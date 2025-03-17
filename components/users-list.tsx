@@ -25,7 +25,6 @@ import {
 import { Pagination, PaginationContent, PaginationItem, PaginationLink, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 import { Badge } from './ui/badge'
 import { User, PaginationResult } from '@/types/user'
-import { useRouter } from 'next/navigation';
 import { UserService } from '@/lib/user-service';
 import { Edit, MapPin, MoreHorizontal, Trash } from "lucide-react"
 
@@ -35,7 +34,6 @@ interface UserListProps {
 }
 
 export default function UsersList({ users: initialUsers }:{users:UserListProps}) {
-  const router = useRouter();
   const [users, setUsers] = useState(initialUsers || []);
   const [userToDelete, setUserToDelete] = useState<string | null>(null);
   const [pagination, setPagination] = useState<PaginationResult>({ total: 0, page: 1, limit: 10, pages: 1 });

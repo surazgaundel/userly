@@ -128,7 +128,7 @@ export default function UserForm({user}:UserFormProps) {
   }
 
   const handleOnPlacesChanged=()=>{
-    let result = inputRef.current.getPlaces();
+    const result = inputRef.current.getPlaces();
     const { formatted_address, geometry } = result[0];
     if (formatted_address && geometry) {
       setFormData((prev) => ({
