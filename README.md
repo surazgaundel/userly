@@ -10,7 +10,7 @@ It provides the features based on user role, here roles are admin, editor and us
 - **Feature 3**: minimal and dynamic UI.
 
 ## Technologies Used
-- **Technology **: Nextjs, React, TailwindCSS, mongoDB (for database), typescript for types checking and DTO for input validation.
+- **Technology **: Nextjs, React, TailwindCSS and shadcnui for quick styling of the component, mongoDB (for database), typescript for types checking and DTO for input validation.
 
 ## Installation
 1. Clone the repository:
